@@ -1,0 +1,36 @@
+.custom-btn {
+  padding: 8px 20px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 8px;
+  outline: none;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.custom-btn.friend {
+  background: #43a047;
+}
+.custom-btn.friend:hover {
+  background: #388e3c;
+}
+.custom-btn.teacher {
+  background: #1976d2;
+}
+.custom-btn.teacher:hover {
+  background: #115293;
+}
+
+.custom-btn.student {
+  background: #8e24aa;
+}
+.custom-btn.student:hover {
+  background: #6d1b7b;
+}
+
+.custom-btn:focus {
+  box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.3);
+}
