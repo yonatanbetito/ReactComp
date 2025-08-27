@@ -3,17 +3,14 @@ import React from "react";
 import "./ProfileCard.css";
 import Button from "./button";
 
-const ProfileCard = ({
-  avatarUrl,
-  name,
-  description,
-  typeProfile,
-}: {
+type ProfileCardProps = {
   avatarUrl: string;
   name: string;
   description: string;
   typeProfile: "friend" | "teacher" | "student";
-}) => {
+};
+
+function ProfileCard({ avatarUrl, name, description, typeProfile }: ProfileCardProps) {
   return (
     <div className="profile-card">
       <img src={avatarUrl} className="profile-card-avatar" />
@@ -22,6 +19,6 @@ const ProfileCard = ({
       <Button personType={typeProfile}>{typeProfile}</Button>
     </div>
   );
-};
+}
 
 export default ProfileCard;

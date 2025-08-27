@@ -9,6 +9,11 @@
   align-items: center;
   max-width: 320px;
 }
+.profile-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+  transition: all 0.3s ease;
+}
 
 .profile-card-avatar {
   width: 96px;
