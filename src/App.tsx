@@ -11,9 +11,6 @@ export default function App() {
       <header className="name">
         <Name />
       </header>
-      <div className="time">
-        <Time />
-      </div>
       <div className="profiles-card">
         <ProfileCard
           avatarUrl="/public/person_15450781.png"
@@ -45,10 +42,24 @@ export default function App() {
           description="Children"
           typeProfile="friend"
         />
-
+        <ProfileCard
+          avatarUrl="/public/person_15450781.png"
+          name="Sarah"
+          description="Full Stack Developer"
+          typeProfile="student"
+        />
+        <ProfileCard
+          avatarUrl="/public/person_15450781.png"
+          name="Daniel"
+          description="Electrical engineer"
+          typeProfile="friend"
+        />
       </div>
       <div>
         <Footer />
+      <div className="time">
+        <Time />
+      </div>
       </div>
     </>
   );
